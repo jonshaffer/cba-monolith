@@ -1,9 +1,18 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
-  </div>
-</main>
+<h1>
+  Home
+</h1>
+
+<section>
+  <p>
+    <label for="linker">Go to a page</label>
+    <input-text id="linker" value="$ctrl.name"></input-text>
+  </p>
+
+  <p>
+    <a ui-sref="{{$ctrl.name}}">{{$ctrl.name}}</a>
+  </p>
+
+  <p>
+    <a ui-sref="login">Logout</a>
+  </p>
+</section>

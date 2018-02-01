@@ -1,8 +1,8 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import homeComponent from './home.component';
+import LoginComponent from './login.component';
 
-let homeModule = angular.module('home', [
+let loginModule = angular.module('login', [
   uiRouter
 ])
 
@@ -12,12 +12,12 @@ let homeModule = angular.module('home', [
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('home', {
-      url: '/home',
-      component: 'home'
+    .state('login', {
+      url: '/',
+      component: 'login'
     });
 })
-  .component('home', homeComponent)
+  .component('login', LoginComponent)
   .name;
 
-export default homeModule;
+export default loginModule;

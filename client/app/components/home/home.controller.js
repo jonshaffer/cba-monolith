@@ -1,6 +1,9 @@
 class HomeController {
-  constructor() {
-    this.name = 'home';
+  constructor($document) {
+    'ngInject';
+
+    this.$document = $document;
+    this.name = 'about';
   }
 }
 
